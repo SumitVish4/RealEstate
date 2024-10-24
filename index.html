@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real Estate Project showcasing luxury living.">
+    <title>Luxury Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="nav-container">
+          <a href="#" class="brand">Luxury Estate</a>
+          <button class="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
+          <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+    </header>
+  
+
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <h1>Discover Luxury Living</h1>
+        <p>Your dream home awaits</p>
+    </section>
+
+    <!-- Description Section -->
+    <section id="about" class="description">
+        <h2>About the Project</h2>
+        <p>This real estate project offers modern amenities, luxury apartments, and serene surroundings.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Property Features</h2>
+        <div class="cards">
+            <div class="card" onclick="logFeatureClick('property1')">
+                <img src="images/property1.jpg" alt="">
+                <h3>Swimming Pool</h3>
+            </div>
+            <div class="card" onclick="logFeatureClick('property2')">
+                <img src="images/property2.jpg" alt="">
+                <h3>State-of-the-art Gym</h3>
+            </div>
+            <div class="card" onclick="logFeatureClick('property3')">
+                <img src="images/property1.jpg" alt="">
+                <h3>Beautiful Garden</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" onclick="logButtonClick()">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luxury Estate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
